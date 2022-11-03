@@ -25,7 +25,9 @@ export const Products: React.FC<Props> = ({ product }) => {
         ? <ProductCategory category={category} />
         : 'No category'}
 
-      <ProductUser user={user} />
+      {user
+        ? <ProductUser user={user} />
+        : 'No user'}
     </tr>
   );
 };
