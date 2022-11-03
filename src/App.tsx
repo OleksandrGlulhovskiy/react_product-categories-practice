@@ -96,8 +96,8 @@ export const App: React.FC = () => {
                     'is-active': userForFilter === user.name,
                   })}
                   key={user.id}
-                  onClick={(e) => {
-                    e.preventDefault();
+                  onClick={(event) => {
+                    event.preventDefault();
                     setUserForFilter(user.name);
                   }}
                 >
